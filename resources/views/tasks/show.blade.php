@@ -4,9 +4,11 @@
 
 <h1>id = {{ $task->id }} のタスクの詳細ページ</h1>
 
-    <p>{{ $task->content }}</p>
+     <p>タイトル: {{ $task-> status }}</p>
+    <p>メッセージ: {{ $task->content }}</p>
+    
+    
      {!! link_to_route('tasks.edit', 'このタスクを編集', ['id' => $task->id]) !!}
-
 
 {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
         {!! Form::submit('削除') !!}
