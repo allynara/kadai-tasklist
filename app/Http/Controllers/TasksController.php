@@ -52,7 +52,7 @@ class TasksController extends Controller
         ]);
 
 
-        $task = new Message;
+        $task = new Task;
         $task->status = $request->status;    // add
         $task->content = $request->content;
         $task->save();
@@ -107,7 +107,7 @@ class TasksController extends Controller
         ]);
 
 
-        $task = Message::find($id);
+        $task = Task::find($id);
         $task->status = $request->status;    // add
         $task->content = $request->content;
         $task->save();
