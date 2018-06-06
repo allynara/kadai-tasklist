@@ -6,7 +6,7 @@
   
   {!! Form::model($task, ['route' => 'tasks.store']) !!}
           <div class="row">
-        <div class="col-xs-12","col-sm-8","col-lg-3">
+       <div class="col-xs-offset-12 col-sm-offset-8 col-lg-offset-3">
            
             {!! Form::model($task, ['route' => 'tasks.store']) !!}
             
