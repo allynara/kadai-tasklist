@@ -6,7 +6,8 @@
   
   {!! Form::model($task, ['route' => 'tasks.store']) !!}
           <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12","col-sm-8","col-lg-3">
+           
             {!! Form::model($task, ['route' => 'tasks.store']) !!}
             
                 <div class="form-group">
@@ -15,7 +16,7 @@
                 </div>
                     
                 <div class="form-group">
-                    {!! Form::label('content', 'タスク') !!}
+                    {!! Form::label('content', 'タスク:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 </div>
                 
